@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  font-family: 'Public-sans', sans-serif;
+  font-family: "Public-sans", sans-serif;
   font-size: 1.5rem;
   color: var(--color-blue);
   background-color: var(--color-white);
@@ -57,11 +57,18 @@ p {
 .heading--primary {
   font-size: 5rem;
   margin-bottom: 2rem;
+  max-width: 70rem;
 }
 
 .heading--secondary {
   font-size: 4rem;
   line-height: 5.5rem;
+}
+
+.heading--tertiary {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  font-weight: 300;
 }
 
 .button-primary:link,
@@ -99,6 +106,47 @@ p {
   width: var(--width-md);
   padding: 2rem;
   margin: 0 auto;
+}
+
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 5rem;
+  margin: 5rem auto;
+}
+
+.indent-left {
+  padding-left: 8rem;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+.col-5 {
+  grid-column: span 5;
+}
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
 }
 
 .circle {
@@ -171,6 +219,12 @@ section {
 
 .circle-nav-right {
   top: -300px;
+  right: -400px;
+  z-index: -2;
+}
+
+.circle-nav-right--2 {
+  top: -750px;
   right: -400px;
   z-index: -2;
 }

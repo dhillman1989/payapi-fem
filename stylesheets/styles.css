@@ -598,15 +598,25 @@ STATS ROW
 
 .checkbox {
   margin: 2rem 1rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   display: inline-block;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: var(--color-red-light);
+  text-align: center;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.checkbox .check {
+  opacity: 0;
 }
 
 .contact-form__input--checkbox:checked + .send-updates__label .checkbox {
-  background-color: var(--color-blue);
+  background-color: var(--color-red-light);
+}
+
+.contact-form__input--checkbox:checked + .send-updates__label .checkbox .check {
+  opacity: 1;
 }
 
 .join {

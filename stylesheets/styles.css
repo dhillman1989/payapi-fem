@@ -1,5 +1,5 @@
 :root {
-  --width-sm: 375px;
+  --width-sm: 400px;
   --width-md: 1100px;
   --width-lg: 1440px;
 
@@ -24,6 +24,10 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a, button{
+  transition: background-color 0.5s, color 0.5s;
 }
 
 input,
@@ -809,4 +813,81 @@ STATS ROW
     flex-direction: row;
     width: 70%;
   }
+}
+
+
+@media only screen and (max-width: 600px){
+  html{
+    font-size: 50%;
+  }
+
+  .navbar{
+    justify-content: flex-start;
+  }
+
+  .navbar__list, .navbar__button{
+    display: none;
+  }
+
+
+  .heading--primary {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    
+    margin: 0 auto;
+    padding: 0 0.5em;
+  }
+
+  .header .left{
+    text-align: center;
+  }
+
+  .link{
+    font-weight: 700;
+  }
+
+  .form, .request-demo form{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .form__input{
+    margin-bottom: 1.5rem;
+  }
+
+  .form__input,
+  .form__input-button{
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .clients__grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5rem;
+    grid-column-gap:6rem;
+    justify-items: center;
+    z-index: 2;
+  }
+  
+  .clients__text{
+    width: 80%;
+  }
+
+  .feature__small-container{
+    flex-direction: column;
+    width: 75%
+  }
+
+  .feature__small{
+    margin-bottom: 5rem;
+  }
+
+  .feature__small h4{
+    font-size:  2rem;
+  }
+
 }

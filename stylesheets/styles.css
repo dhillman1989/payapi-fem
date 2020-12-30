@@ -1,5 +1,5 @@
 :root {
-  --width-sm: 400px;
+  --width-sm: 600px;
   --width-md: 1100px;
   --width-lg: 1440px;
 
@@ -641,7 +641,7 @@ STATS ROW
 
 @media only screen and (max-width: 1100px) {
   html {
-    font-size: 56.5%;
+    font-size: 50%;
   }
 
   .heading--primary {
@@ -815,10 +815,14 @@ STATS ROW
   }
 }
 
+.pricing__price{
+  font-size: 3.8rem;
+}
+
 
 @media only screen and (max-width: 600px){
   html{
-    font-size: 50%;
+    font-size: 46%;
   }
 
   .navbar{
@@ -888,6 +892,28 @@ STATS ROW
 
   .feature__small h4{
     font-size:  2rem;
+  }
+
+  .pricing__tariff{
+    grid-column: span 3;
+    width: 60%;
+    margin: 0 auto 10rem auto;;
+  }
+
+  .pricing__title{
+    margin-bottom: 4rem;
+  }
+
+  .pricing__description{
+    display: none;
+  }
+
+  .pricing__price{
+    margin-bottom: 5rem;
+  }
+
+  .pricing__button{
+    margin-top: 3rem;
   }
 
 }

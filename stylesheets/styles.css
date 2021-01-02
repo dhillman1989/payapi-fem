@@ -45,6 +45,7 @@ body {
   color: var(--color-blue);
   background-color: var(--color-white);
   overflow-x: hidden;
+  width: 100vw;
 }
 
 /* TYPOGRAPHY */

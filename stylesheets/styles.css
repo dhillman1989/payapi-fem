@@ -852,6 +852,10 @@ STATS ROW
     text-align: center;
   }
 
+  .header__img--phone{
+    margin-left: 5.5rem;
+  }
+
   .link{
     font-weight: 700;
   }

@@ -44,9 +44,13 @@ body {
   font-size: 1.5rem;
   color: var(--color-blue);
   background-color: var(--color-white);
-  overflow-x: hidden;
-  width: 100vw;
+  max-width: 100%;
 }
+
+.body-container{
+  overflow-x: hidden;
+}
+
 
 /* TYPOGRAPHY */
 
@@ -828,6 +832,7 @@ STATS ROW
 
   .navbar{
     justify-content: flex-start;
+    
   }
 
   .navbar__list, .navbar__button{
